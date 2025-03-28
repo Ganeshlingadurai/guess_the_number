@@ -12,6 +12,10 @@
     function check()
     {
         var d3=d1.value
+        if(score < 0) {
+          alert("You Loss!.. The Numberr to be guessed was : " + d4) 
+        }
+        else {
         if(d3==d4){
             d2.textContent="Right"
             alert("You Won!..")
@@ -21,6 +25,6 @@
             d5.textContent="Score:"+score
             d2.textContent="Wrong"
         }
-        console.log(d4)
+        }
     }
 </script>
